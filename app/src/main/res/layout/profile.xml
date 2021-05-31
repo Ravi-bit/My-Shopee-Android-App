@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:text="Your account details"
+        android:textSize="30sp"
+        android:id="@+id/mainT"
+        android:fontFamily="@font/open_sans_semibold"
+        android:textColor="@android:color/black"
+        android:layout_marginTop="70dp"
+        android:layout_centerHorizontal="true"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:id="@+id/pu"
+        android:layout_height="wrap_content"
+        android:text="Hi"
+        android:layout_marginTop="30dp"
+        android:layout_below="@id/mainT"
+        android:textSize="30sp"
+        android:fontFamily="@font/open_sans_bold"
+        android:layout_centerHorizontal="true"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:id="@+id/pe"
+        android:layout_height="wrap_content"
+        android:text="Hi"
+        android:layout_below="@id/pu"
+        android:layout_marginTop="25dp"
+        android:textSize="30sp"
+        android:fontFamily="@font/open_sans_bold"
+        android:layout_centerInParent="true"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:id="@+id/pp"
+        android:layout_height="wrap_content"
+        android:text="Hi"
+        android:layout_below="@id/pe"
+        android:layout_marginTop="25dp"
+        android:textSize="30sp"
+        android:fontFamily="@font/open_sans_bold"
+        android:layout_centerInParent="true"
+        />
+
+</RelativeLayout>

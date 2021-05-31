@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_profile"
+            android:icon="@drawable/ic_baseline_accessibility_24"
+            android:title="Profile"
+            />
+        <item
+            android:id="@+id/popular"
+            android:icon="@drawable/ic_baseline_notifications_none_24"
+            android:title="Popular items"
+            />
+
+        <item
+            android:id="@+id/recommend"
+            android:icon="@drawable/ic_baseline_restaurant_menu_24"
+            android:title="Recommended items"
+
+            />
+        <item
+            android:id="@+id/wish"
+            android:icon="@drawable/ic_baseline_add_shopping_cart_24"
+            android:title="Wish List"
+
+            />
+    </group>
+
+    <item
+        android:title="Products">
+        <menu>
+            <item
+                android:id="@+id/electronics"
+                android:icon="@drawable/ic_baseline_tv_24"
+                android:title="Electronics"
+                />
+            <item
+                android:id="@+id/cloth"
+                android:icon="@drawable/ic_baseline_local_drink_24"
+                android:title="Clothes"
+                />
+            <item
+                android:id="@+id/food"
+                android:icon="@drawable/ic_baseline_fastfood_24"
+                android:title="Food"
+                />
+        </menu>
+    </item>
+
+    <item
+        android:title="Communication">
+        <menu>
+            <item
+                android:id="@+id/review"
+                android:icon="@drawable/ic_baseline_rate_review_24"
+                android:title="Feedback"
+                />
+            <item
+                android:id="@+id/rateus"
+                android:icon="@drawable/ic_baseline_star_24"
+                android:title="Rate Us"
+                />
+            <item
+                android:id="@+id/logout"
+                android:icon="@drawable/ic_baseline_people_outline_24"
+                android:title="Log Out"
+                />
+            <item
+                android:id="@+id/exit"
+                android:icon="@drawable/ic_baseline_exit_to_app_24"
+                android:title="Exit"
+                />
+        </menu>
+    </item>
+
+
+</menu>

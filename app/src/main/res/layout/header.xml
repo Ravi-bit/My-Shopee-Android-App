@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="176dp"
+    android:padding="10dp"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark"
+    android:gravity="bottom"
+    android:background="@drawable/gradient">
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/profile"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/navText"
+        android:paddingTop="0dp"
+        android:text="Hey! Sign In"
+        android:padding="2dp"
+        android:textSize="18sp"
+        android:fontFamily="@font/open_sans_bold"
+        android:textColor="@android:color/white"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/navEmail"
+        android:padding="2dp"
+        android:textSize="14sp"
+        android:fontFamily="@font/open_sans_bold"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="5dp"
+        android:text="Email"/>
+</LinearLayout>

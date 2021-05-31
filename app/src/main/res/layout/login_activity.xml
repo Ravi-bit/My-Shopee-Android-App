@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient"
+    tools:context=".Login">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/t1"
+        android:minHeight="?attr/actionBarSize"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:titleTextColor="@android:color/white"
+        android:background="@drawable/gradient"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark"
+        app:title="Log In"
+        android:layout_alignParentTop="true"
+        tools:ignore="MissingConstraints"></androidx.appcompat.widget.Toolbar>
+    <ImageView
+        android:id="@+id/logoView"
+        android:layout_width="120dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="40dp"
+        app:srcCompat="@drawable/fastfood"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/logoView"
+        android:drawableLeft="@drawable/ic_baseline_verified_user_24"
+        android:drawablePadding="25dp"
+        android:padding="10dp"
+        android:ems="10"
+        android:layout_marginTop="20dp"
+        android:textColor="@android:color/darker_gray"
+        android:textColorHint="@android:color/darker_gray"
+        android:hint="Username.."
+        android:textSize="16dp"
+        android:inputType="textEmailAddress"
+        android:background="@drawable/shapededit"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:layout_centerHorizontal="true"
+        />
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+       android:layout_marginTop="15dp"
+        android:layout_marginBottom="8dp"
+        android:layout_below="@id/username"
+        android:id="@+id/ced1"
+        android:textColorHint="@android:color/darker_gray"
+        android:layout_centerHorizontal="true"
+       >
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:drawableLeft="@drawable/ic_baseline_email_24"
+        android:drawablePadding="25dp"
+        android:padding="10dp"
+        android:ems="10"
+        android:textColor="@android:color/darker_gray"
+        android:hint="Email.."
+        android:textSize="16dp"
+        android:inputType="textEmailAddress"
+        android:background="@drawable/shapededit"
+        android:maxLines="1"
+        android:singleLine="true"
+       />
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:passwordToggleEnabled="true"
+        android:layout_marginBottom="15dp"
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/ced1"
+        android:textColorHint="@android:color/darker_gray"
+        android:id="@+id/ced2"
+        app:startIconDrawable="@drawable/ic_baseline_vpn_key_24"
+        app:startIconTint="@android:color/white"
+        android:layout_centerHorizontal="true"
+        app:passwordToggleTint="@android:color/darker_gray">
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+
+        android:ems="10"
+        android:hint="Password"
+        android:textColor="@android:color/darker_gray"
+        android:drawablePadding="8dp"
+        android:layout_below="@id/ced1"
+        android:layout_centerHorizontal="true"
+        android:padding="10dp"
+        android:imeActionId="@+id/login"
+        android:imeActionLabel="action_sign_in_short"
+        android:background="@drawable/shapededit"
+        android:imeOptions="actionUnspecified"
+        android:inputType="textPassword"
+        android:maxLines="1"
+        android:singleLine="true"
+        tools:ignore="InvalidImeActionId"
+         />
+    </com.google.android.material.textfield.TextInputLayout>
+    <CheckBox
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Remember Me"
+        android:layout_alignStart="@id/ced2"
+        android:layout_below="@id/ced2"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="15dp"
+        android:textColor="@android:color/darker_gray"
+        android:id="@+id/checkBoxRememberMe"/>
+
+     <Button
+         android:layout_width="200dp"
+         android:layout_height="wrap_content"
+         android:id="@+id/logButton"
+         android:textAllCaps="false"
+         android:background="@drawable/rounded"
+         android:text="Log In"
+         android:layout_marginTop="10dp"
+         android:layout_centerHorizontal="true"
+         android:layout_below="@id/checkBoxRememberMe"/>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Register Here"
+        android:textColor="@android:color/darker_gray"
+        android:layout_above="@+id/linearLayout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="6dp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+      android:layout_centerHorizontal="true"
+        android:layout_marginBottom="25dp"
+        android:id="@+id/linearLayout">
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/twitter" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            app:srcCompat="@drawable/instagram" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            app:srcCompat="@drawable/facebook" />
+    </LinearLayout>
+</RelativeLayout>

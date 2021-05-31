@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="10dp"
+    android:layout_margin="3dp">
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:id="@+id/rl"
+        android:padding="8dp"
+        android:background="@drawable/outline"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_alignParentTop="true"
+            android:id="@+id/icon"
+            android:layout_width="110dp"
+            android:layout_height="142dp"
+            android:layout_marginRight="5dp"
+            />
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@id/icon"
+            android:layout_marginBottom="3dp"
+            android:padding="2dp"
+            android:text="title"
+            android:fontFamily="@font/open_sans_bold"
+            android:gravity="start"
+            android:textSize="15sp"
+            android:textStyle="italic" />
+        <TextView
+            android:id="@+id/subtitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/title"
+            android:layout_toEndOf="@id/icon"
+            android:gravity="start"
+            android:padding="3dp"
+            android:layout_marginBottom="10dp"
+            android:text="subtitle"
+            android:textSize="17sp"
+            android:textStyle="italic" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/title"
+            android:textSize="10sp"
+            android:id="@+id/date"
+            android:text="date"
+            android:layout_marginBottom="7dp"
+            android:padding="2dp"
+            android:gravity="end"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/subtitle"
+            android:layout_alignEnd="@id/rl"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="20dp"
+            android:layout_toEndOf="@id/icon"
+            tools:ignore="NotSibling">
+
+            <ImageButton
+                android:id="@+id/likeBtn"
+                android:layout_width="65dp"
+                android:layout_height="40dp"
+                android:padding="10dp"
+                android:background="@drawable/likel"
+                android:src="@drawable/like2"
+                android:layout_margin="5dp"
+                />
+
+            <ImageButton
+                android:id="@+id/buttonDelete"
+                android:layout_width="65dp"
+                android:layout_height="40dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/deletel"
+                android:src="@drawable/ic_baseline_delete_24"
+
+                />
+        </LinearLayout>
+    </RelativeLayout>
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+</LinearLayout>
